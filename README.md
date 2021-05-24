@@ -1,5 +1,7 @@
 # Let's Play with Go Language
 
+## Create a new Ubuntu VM on Azure
+
 ```text
 $ az group create --name pk-group-go-01 --location westeurope
 ...
@@ -41,3 +43,21 @@ $ sudo apt-get update
 $ sudo apt-get upgrade -y
 ...
 ```
+
+## Install Go
+
+Reference(s): <https://golang.org/doc/install>
+
+```text
+~$ wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+...
+2021-05-24 14:04:28 (109 MB/s) - ‘go1.16.4.linux-amd64.tar.gz’ saved [129044044/129044044]
+```
+
+```text
+~$ rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.4.linux-amd64.tar.gz
+~$ export PATH=$PATH:/usr/local/go/bin
+~$ go version
+go version go1.16.4 linux/amd64
+```
+
