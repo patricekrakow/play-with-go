@@ -14,10 +14,10 @@ Check if any previous version of Go is installed trying the `go` command:
 go version
 ```
 
-or by looking at the `/usr/local/go` folder (if it exists):
+or by looking at the `VERSION` file whithin the `/usr/local/go` folder (if it exists):
 
 ```text
-ls /usr/local/go
+more /usr/local/go/VERSION
 ```
 
 Then, if needed, download the latest version of Go from <https://go.dev/dl>, 
